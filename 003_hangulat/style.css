@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    /* border: 3px solid red; */
+    background: #2F5E4D;
+    min-height: 100vh;
+    /* viewport height = amit látunk a böngésző képernyőjén teljes magasság */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; 
+    /* a html elem font-size tulajdonság arányaihoz számol, jelen esetben 20px */
+}
+
+.container > img {
+    height: 200px;
+}
+
+.container > input {
+    width: 50%;
+    height: 2rem;
+    background: #CCCCCC;
+    border-radius: 5rem;
+    color: #FFFFFF;
+}
